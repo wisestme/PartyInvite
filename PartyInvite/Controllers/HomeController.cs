@@ -9,9 +9,9 @@ namespace PartyInvite.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public ViewResult Index()
         {
-            return "Jesus is Lord";
+            return View();
         }
     }
 }
