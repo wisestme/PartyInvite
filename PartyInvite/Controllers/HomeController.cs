@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PartyInvite.Models;
 
 namespace PartyInvite.Controllers
 {
@@ -21,9 +22,16 @@ namespace PartyInvite.Controllers
             return View();
         }
 
+        [HttpGet]
         public ViewResult RSVPForm()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ViewResult RSVPForm(GuestResponse guestResponse)
+        {
+            return View("Thanks", guestResponse);
         }
     }
 }
