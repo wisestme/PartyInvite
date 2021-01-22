@@ -22,6 +22,18 @@
             <p>Car Model: @Html.TextBoxFor(m => m.CarModel)</p>
             <p>Year of Manufacture: @Html.TextBoxFor(m => m.YearManufactured)</p>
 
+            <p>Receive Email Notification: @Html.DropDownListFor(m => m.GetEmailNotification, new []
+                                           {
+                                               new SelectListItem()
+                                               {
+                                                   Text = "Yes send me notification by Email", Value = bool.TrueString
+                                               },
+                                               new SelectListItem()
+                                               {
+                                                   Text = "No please. My inbox is full", Value = bool.FalseString
+                                               }
+                                           }, "choose an option")</p>
+
             <input type="submit" value="Submit request"/>
         }
     </div>
