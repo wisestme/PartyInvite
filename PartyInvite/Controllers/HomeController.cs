@@ -43,7 +43,7 @@ namespace PartyInvite.Controllers
         [HttpPost]
         public ViewResult CarPurchaseForm(CarPurchaseRequest carPurchaseRequest)
         {
-            return View("ReplyUserCarPurchase", carPurchaseRequest);
+            return View("ReplyUserPurchase", carPurchaseRequest);
         }
     }
 }
