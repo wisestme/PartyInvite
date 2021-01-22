@@ -108,6 +108,7 @@
     <Content Include="Views\Home\Greet.cshtml" />
     <Content Include="Views\Home\RSVPForm.cshtml" />
     <Content Include="Views\Home\Thanks.cshtml" />
+    <Content Include="Views\Home\CarPurchaseForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

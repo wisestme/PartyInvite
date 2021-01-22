@@ -33,5 +33,17 @@ namespace PartyInvite.Controllers
         {
             return View("Thanks", guestResponse);
         }
+
+        [HttpGet]
+        public ViewResult CarPurchaseForm()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult CarPurchaseForm(CarPurchaseRequest carPurchaseRequest)
+        {
+            return View("ReplyUserCarPurchase", carPurchaseRequest);
+        }
     }
 }

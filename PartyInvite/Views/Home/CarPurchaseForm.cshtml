@@ -1,0 +1,27 @@
+﻿@model PartyInvite.Models.CarPurchaseRequest
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CarPurchaseForm</title>
+</head>
+<body>
+    <div>
+        <h1>Car Purchase Request Form</h1>
+        <p>Please let us know what kind of car you are considering</p>
+        @using (Html.BeginForm())
+        {
+            <p>Car Manufacturer: @Html.TextBoxFor(m => m.CarManufacturer)</p>
+            <p>Car Type: @Html.TextBoxFor(m => m.CarType)</p>
+            <p>Car Model: @Html.TextBoxFor(m => m.CarModel)</p>
+            <p>Year of Manufacture: @Html.TextBoxFor(m => m.YearManufactured)</p>
+        }
+    </div>
+</body>
+</html>
