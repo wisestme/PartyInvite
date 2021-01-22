@@ -15,6 +15,14 @@
     <div>
         <h1>Thank you</h1>
         <p>We will let you know the cost of a @Model.CarManufacturer @Model.CarType @Model.CarModel @Model.YearManufactured</p>
+        @if (Model.GetEmailNotification == true)
+        {
+            @: We will respond to you va Email
+        }
+        else
+        {
+            @: now that you inbox is full, what do want us to do?
+        }
     </div>
 </body>
 </html>
