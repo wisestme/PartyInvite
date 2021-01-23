@@ -98,6 +98,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CarPurchaseRequest.cs" />
+    <Compile Include="Models\FavouriteArtistResponse.cs" />
     <Compile Include="Models\GuestResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
