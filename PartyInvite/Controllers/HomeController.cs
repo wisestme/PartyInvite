@@ -45,5 +45,10 @@ namespace PartyInvite.Controllers
         {
             return View("ReplyUserPurchase", carPurchaseRequest);
         }
+
+        public ViewResult FavouriteArtistForm()
+        {
+            return View();
+        }
     }
 }
