@@ -112,6 +112,7 @@
     <Content Include="Views\Home\CarPurchaseForm.cshtml" />
     <Content Include="Views\Home\ReplyUserPurchase.cshtml" />
     <Content Include="Views\Home\FavouriteArtistForm.cshtml" />
+    <Content Include="Views\Home\ReplyUserFavouriteUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

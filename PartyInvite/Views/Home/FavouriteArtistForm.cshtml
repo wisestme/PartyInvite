@@ -15,12 +15,17 @@
     <div>
         <h1>Your Favourite Music Artist</h1>
         
-        <p>Artist Name: @Html.TextBoxFor(f => f.ArtistName)</p>
-        <p>Artist Date of Birth: @Html.TextBoxFor(f => f.ArtistDOB)</p>
-        <p>Number of Albums: @Html.TextBoxFor(f => f.NumberOfAlbum)</p>
-        <p>Your Favourite Track: @Html.TextBoxFor(f => f.YourFavouriteTrack)</p>
-        <p>Your User Name: @Html.TextBoxFor(f => f.UserName)</p>
-        <input type="submit" value="Send" />
+        @using (Html.BeginForm())
+        {
+            <p>Artist Name: @Html.TextBoxFor(f => f.ArtistName)</p>
+            <p>Artist Date of Birth: @Html.TextBoxFor(f => f.ArtistDOB)</p>
+            <p>Number of Albums: @Html.TextBoxFor(f => f.NumberOfAlbum)</p>
+            <p>Your Favourite Track: @Html.TextBoxFor(f => f.YourFavouriteTrack)</p>
+            <p>Your User Name: @Html.TextBoxFor(f => f.UserName)</p>
+            <input type="submit" value="Send" />
+        }
+
+        
     </div>
 </body>
 </html>
