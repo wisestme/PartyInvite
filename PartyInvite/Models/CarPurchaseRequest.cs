@@ -10,7 +10,16 @@ namespace PartyInvite.Models
         public string CarManufacturer { get; set; }
         public string CarType { get; set; }
         public string CarModel { get; set; }
-        public DateTime YearManufactured { get; set; }
+        public string YearManufactured { get; set; }
+
+        //public DateTime YearManufactured
+        //{
+        //    get { return _yearManufactured; }
+        //    set
+        //    {
+        //        _yearManufactured = DateTime.Parse(_yearManufactured.Year.ToString());
+        //    }
+        //}
         public bool? GetEmailNotification { get; set; }
     }
 }
