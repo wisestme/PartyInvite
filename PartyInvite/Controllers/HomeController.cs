@@ -31,7 +31,15 @@ namespace PartyInvite.Controllers
         [HttpPost]
         public ViewResult RSVPForm(GuestResponse guestResponse)
         {
-            return View("Thanks", guestResponse);
+            if (ModelState.IsValid)
+            {
+                return View("Thanks", guestResponse);
+            }
+            else
+            {
+                return View();
+            }
+            
         }
 
         [HttpGet]
