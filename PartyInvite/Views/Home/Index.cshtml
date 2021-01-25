@@ -15,10 +15,16 @@
 <body>
     <div class="text-center">
         Jesus Christ is Lord (From the view)
+        <h2>We ar going to have an exciting party...</h2>
+        <h3>And you are invited</h3>
         <p>Get ready to party hard</p>
-        @Html.ActionLink("RSVP Now", "RSVPForm");
-        @Html.ActionLink("Buy car now", "CarPurchaseForm");
-        @Html.ActionLink("Who is your favourite music artist","FavouriteArtistForm");
+        
+        <div class="btn btn-success">
+            @Html.ActionLink("RSVP Now", "RSVPForm");
+            @Html.ActionLink("Buy car now", "CarPurchaseForm");
+            @Html.ActionLink("Who is your favourite music artist","FavouriteArtistForm");
+        </div>
+        
     </div>
 </body>
 </html>
