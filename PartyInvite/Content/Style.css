@@ -11,7 +11,7 @@
     background-color: #fee;
 }
 
-.validation-summary-error {
+.validation-summary-errors {
     font-weight: bold;
     color: #f00;
 }
