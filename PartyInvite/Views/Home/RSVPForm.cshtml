@@ -24,17 +24,17 @@
 
                 <div class="form-group">
                     <label>Your name:</label>
-                    @Html.TextBoxFor(x => x.Name)
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control"})
                 </div>
 
                 <div class="form-group">
                     <label>Your email:</label>
-                    @Html.TextBoxFor(x => x.Email)
+                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control"})
                 </div>
 
                 <div class="form-group">
                     <label>Your phone:</label>
-                    @Html.TextBoxFor(x => x.Phone)
+                    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control"})
                 </div>
 
                 <div class="form-group">
@@ -51,7 +51,7 @@
                             Text = "No I can't come",
                             Value = bool.FalseString
                         }
-                    }, "Choose an option")
+                    }, "Choose an option", new { @class = "form-control"})
                 </div>
 
                 <input type="submit" value="Submit RSVP" />
