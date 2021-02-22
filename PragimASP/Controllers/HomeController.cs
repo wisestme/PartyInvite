@@ -13,5 +13,10 @@ namespace PragimASP.Controllers
         {
             return "Just returning a simple string";
         }
+
+        public string GetDetails()
+        {
+            return "This is from get details action method";
+        }
     }
 }
