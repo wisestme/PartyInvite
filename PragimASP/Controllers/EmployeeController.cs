@@ -19,7 +19,7 @@ namespace PragimASP.Controllers
                 City = "Enugu",
                 Gender = "Male"
             };
-            return View();
+            return View(employee);
         }
     }
 }
