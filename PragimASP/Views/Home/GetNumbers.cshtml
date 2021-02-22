@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetNumbers</title>
+</head>
+<body>
+<div>
+    <ul>
+        
+            @foreach (int number in ViewBag.SweetNumbers)
+            {
+                <li>@number</li>
+            }
+        
+    </ul>
+</div>
+</body>
+</html>

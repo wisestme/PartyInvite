@@ -24,9 +24,14 @@ namespace PragimASP.Controllers
             return View();
         }
 
-        public string GetDetails()
+        public ActionResult GetNumbers()
         {
-            return "This is from get details action method";
+            ViewBag.SweetNumbers = new List<int>()
+            {
+                8, 13, 27, 23, 17, 25, 16, 11
+            };
+
+            return View();
         }
     }
 }
