@@ -9,9 +9,9 @@ namespace PragimASP.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public string Index(string id)
         {
-            return "Just returning a simple string";
+            return "Just returning a simple string" + id;
         }
 
         public string GetDetails()
