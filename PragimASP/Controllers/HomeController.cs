@@ -9,9 +9,19 @@ namespace PragimASP.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index(string id)
+        public ActionResult Index(string id)
         {
-            return "Just returning a simple string" + id;
+            ViewBag.Countries = new List<string>()
+            {
+                "Nigeria",
+                "Ghana",
+                "Niger",
+                "Canada",
+                "UK",
+                "Netherlands"
+            };
+
+            return View();
         }
 
         public string GetDetails()
