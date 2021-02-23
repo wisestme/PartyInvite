@@ -1,0 +1,22 @@
+﻿@model IEnumerable<PragimASP.Models.Employee>
+
+
+@*@using PragimASP.Models*@
+
+@{
+    ViewBag.Title = "EmployeeList";
+}
+
+<h2>EmployeeList</h2>
+
+<div>
+    <ul>
+        @foreach (var employee in Model)
+        {
+            <li>@employee.Name</li>
+            <li>
+                @Html.ActionLink(@employee.Name, "Details", new {id = employee.EmployeeId});
+            </li>
+        }
+    </ul>
+</div>
