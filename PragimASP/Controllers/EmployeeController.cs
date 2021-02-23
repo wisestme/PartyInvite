@@ -16,5 +16,13 @@ namespace PragimASP.Controllers
             Employee employee = employeeContext.Employees.Single(e => e.EmployeeId == id);
             return View(employee);
         }
+
+        public ActionResult EmployeeList()
+        {
+            Employee myEmployee = new Employee();
+            EmployeeContext employeeContext = new EmployeeContext();
+            List<Employee> employees = employeeContext.Employees.ToList();
+            return View(employees);
+        }
     }
 }
