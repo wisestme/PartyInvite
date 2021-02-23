@@ -111,6 +111,10 @@
     <Compile Include="Migrations\202102231230280_initialModel.designer.cs">
       <DependentUpon>202102231230280_initialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102231245384_addTableData.cs" />
+    <Compile Include="Migrations\202102231245384_addTableData.designer.cs">
+      <DependentUpon>202102231245384_addTableData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeContext.cs" />
@@ -138,6 +142,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102231230280_initialModel.resx">
       <DependentUpon>202102231230280_initialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102231245384_addTableData.resx">
+      <DependentUpon>202102231245384_addTableData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
