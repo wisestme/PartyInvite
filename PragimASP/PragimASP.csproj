@@ -114,8 +114,13 @@
     <Compile Include="Migrations\202102231245384_addTableData.designer.cs">
       <DependentUpon>202102231245384_addTableData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102240935327_addCarModel.cs" />
+    <Compile Include="Migrations\202102240935327_addCarModel.Designer.cs">
+      <DependentUpon>202102240935327_addCarModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\CarContext.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102231245384_addTableData.resx">
       <DependentUpon>202102231245384_addTableData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102240935327_addCarModel.resx">
+      <DependentUpon>202102240935327_addCarModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
