@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ApplianceController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -123,8 +124,21 @@
     <Compile Include="Migrations\202102240955590_addTableData1.Designer.cs">
       <DependentUpon>202102240955590_addTableData1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102241055411_addApplianceModel.cs" />
+    <Compile Include="Migrations\202102241055411_addApplianceModel.Designer.cs">
+      <DependentUpon>202102241055411_addApplianceModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241102191_addApplianceModel1.cs" />
+    <Compile Include="Migrations\202102241102191_addApplianceModel1.Designer.cs">
+      <DependentUpon>202102241102191_addApplianceModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241110417_addApplianceModelMain.cs" />
+    <Compile Include="Migrations\202102241110417_addApplianceModelMain.Designer.cs">
+      <DependentUpon>202102241110417_addApplianceModelMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Appliances.cs" />
+    <Compile Include="Models\ApplianceContext.cs" />
+    <Compile Include="Models\Appliance.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\CarContext.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -150,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Appliance\" />
     <Folder Include="Views\NotHome\" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +179,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102240955590_addTableData1.resx">
       <DependentUpon>202102240955590_addTableData1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241055411_addApplianceModel.resx">
+      <DependentUpon>202102241055411_addApplianceModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241102191_addApplianceModel1.resx">
+      <DependentUpon>202102241102191_addApplianceModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241110417_addApplianceModelMain.resx">
+      <DependentUpon>202102241110417_addApplianceModelMain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

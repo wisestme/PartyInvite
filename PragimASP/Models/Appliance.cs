@@ -5,7 +5,7 @@ using System.Web;
 
 namespace PragimASP.Models
 {
-    public class Appliances
+    public class Appliance
     {
         public int ApplianceID { get; set; }
         public string Name { get; set; }
