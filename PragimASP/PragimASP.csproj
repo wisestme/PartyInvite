@@ -119,6 +119,10 @@
     <Compile Include="Migrations\202102240935327_addCarModel.Designer.cs">
       <DependentUpon>202102240935327_addCarModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102240955590_addTableData1.cs" />
+    <Compile Include="Migrations\202102240955590_addTableData1.Designer.cs">
+      <DependentUpon>202102240955590_addTableData1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\CarContext.cs" />
@@ -135,6 +139,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
     <Content Include="Views\Employee\EmployeeList.cshtml" />
+    <Content Include="Views\Car\GetCars.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,7 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Car\" />
     <Folder Include="Views\NotHome\" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102240935327_addCarModel.resx">
       <DependentUpon>202102240935327_addCarModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102240955590_addTableData1.resx">
+      <DependentUpon>202102240955590_addTableData1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

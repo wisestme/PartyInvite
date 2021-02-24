@@ -1,0 +1,15 @@
+﻿
+@model IEnumerable<PragimASP.Models.Car>
+
+@{
+    ViewBag.Title = "GetCars";
+}
+
+<h2>GetCars</h2>
+
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@car.Name</li>
+    }
+</ul>
