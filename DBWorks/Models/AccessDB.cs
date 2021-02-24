@@ -8,6 +8,6 @@ namespace DBWorks.Models
 {
     public class AccessDB : DbContext
     {
-
+        public DbSet<Employee> Employees { get; set; }
     }
 }
