@@ -124,6 +124,7 @@
       <DependentUpon>202102240955590_addTableData1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Appliances.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\CarContext.cs" />
     <Compile Include="Models\Employee.cs" />
