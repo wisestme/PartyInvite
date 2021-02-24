@@ -19,7 +19,7 @@ namespace PragimASP.Controllers
 
         public ActionResult EmployeeList()
         {
-            Employee myEmployee = new Employee();
+            //Employee myEmployee = new Employee();
             EmployeeContext employeeContext = new EmployeeContext();
             List<Employee> employees = employeeContext.Employees.ToList();
             return View(employees);
