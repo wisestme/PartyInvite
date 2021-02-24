@@ -136,6 +136,26 @@
     <Compile Include="Migrations\202102241110417_addApplianceModelMain.Designer.cs">
       <DependentUpon>202102241110417_addApplianceModelMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102241119163_addApplianceModelMain1.cs" />
+    <Compile Include="Migrations\202102241119163_addApplianceModelMain1.Designer.cs">
+      <DependentUpon>202102241119163_addApplianceModelMain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241126104_addApplianceModelAgain.cs" />
+    <Compile Include="Migrations\202102241126104_addApplianceModelAgain.Designer.cs">
+      <DependentUpon>202102241126104_addApplianceModelAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241249564_addContext.cs" />
+    <Compile Include="Migrations\202102241249564_addContext.Designer.cs">
+      <DependentUpon>202102241249564_addContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241252014_accessAppliances.cs" />
+    <Compile Include="Migrations\202102241252014_accessAppliances.Designer.cs">
+      <DependentUpon>202102241252014_accessAppliances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241335426_rebuild.cs" />
+    <Compile Include="Migrations\202102241335426_rebuild.Designer.cs">
+      <DependentUpon>202102241335426_rebuild.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplianceContext.cs" />
     <Compile Include="Models\Appliance.cs" />
@@ -188,6 +208,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102241110417_addApplianceModelMain.resx">
       <DependentUpon>202102241110417_addApplianceModelMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241119163_addApplianceModelMain1.resx">
+      <DependentUpon>202102241119163_addApplianceModelMain1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241126104_addApplianceModelAgain.resx">
+      <DependentUpon>202102241126104_addApplianceModelAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241249564_addContext.resx">
+      <DependentUpon>202102241249564_addContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241252014_accessAppliances.resx">
+      <DependentUpon>202102241252014_accessAppliances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241335426_rebuild.resx">
+      <DependentUpon>202102241335426_rebuild.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
