@@ -1,0 +1,14 @@
+﻿@model IEnumerable<DBWorks.Models.Employee>
+
+@{
+    ViewBag.Title = "GetEmployees";
+}
+
+<h2>GetEmployees</h2>
+
+<ul>
+    @foreach (var employee in Model)
+    {
+        <li>@employee.Name</li>
+    }
+</ul>
