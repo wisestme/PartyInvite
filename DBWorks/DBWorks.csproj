@@ -134,6 +134,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Employee\GetEmployees.cshtml" />
     <Content Include="Views\GetCars\Index.cshtml" />
+    <Content Include="Views\Employee\EmployeeDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

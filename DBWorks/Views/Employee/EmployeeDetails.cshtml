@@ -1,0 +1,30 @@
+﻿@model DBWorks.Models.Employee
+
+@{
+    ViewBag.Title = "EmployeeDetails";
+}
+
+<h2>Employee Salary Details</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td>@Model.Name</td>
+    </tr>
+
+    <tr>
+        <td>Salary</td>
+        <td>@Model.Salary</td>
+    </tr>
+
+    <tr>
+        <td>Experience</td>
+        <td>@Model.ExperienceYears</td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>@Model.Email</td>
+    </tr>
+</table>
+
