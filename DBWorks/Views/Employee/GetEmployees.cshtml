@@ -10,7 +10,7 @@
 <ul>
     @foreach (var employee in Model)
     {
-        <li>@Html.ActionLink(employee.Name, "Index", "GetCars")</li>
+        <li>@Html.ActionLink(employee.Name, "EmployeeDetails", new{id = employee.EmployeeId})</li>
 
         if (employee.Salary > 4000000)
         {
