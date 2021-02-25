@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<DBWorks.Models.Employee>
 
+
 @{
     ViewBag.Title = "GetEmployees";
 }
@@ -11,8 +12,8 @@
     {
         <li>@employee.Name</li>
 
-          if (employee.Salary > 4000000)
-          {
+        if (employee.Salary > 4000000)
+        {
             <li>@employee.Name is a bigger boy</li>
         }
 
@@ -21,4 +22,6 @@
             <li>@employee.Name is a senior staff</li>
         }
     }
+
+    
 </ul>
