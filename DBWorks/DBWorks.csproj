@@ -107,8 +107,17 @@
     <Compile Include="Migrations\202102241520054_initialModel.designer.cs">
       <DependentUpon>202102241520054_initialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102241548406_addCarModel.cs" />
+    <Compile Include="Migrations\202102241548406_addCarModel.designer.cs">
+      <DependentUpon>202102241548406_addCarModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102241557385_connectToDB.cs" />
+    <Compile Include="Migrations\202102241557385_connectToDB.designer.cs">
+      <DependentUpon>202102241557385_connectToDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccessDB.cs" />
+    <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -129,6 +138,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102241520054_initialModel.resx">
       <DependentUpon>202102241520054_initialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241548406_addCarModel.resx">
+      <DependentUpon>202102241548406_addCarModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241557385_connectToDB.resx">
+      <DependentUpon>202102241557385_connectToDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
