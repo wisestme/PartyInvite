@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DBWorks.Models.Car>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@car.Name @car.Make</li>
+    }
+</ul>

@@ -133,6 +133,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Employee\GetEmployees.cshtml" />
+    <Content Include="Views\GetCars\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,7 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\GetCars\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102241520054_initialModel.resx">
