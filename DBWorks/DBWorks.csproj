@@ -116,6 +116,10 @@
     <Compile Include="Migrations\202102241557385_connectToDB.designer.cs">
       <DependentUpon>202102241557385_connectToDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102250835119_changePropertyType.cs" />
+    <Compile Include="Migrations\202102250835119_changePropertyType.Designer.cs">
+      <DependentUpon>202102250835119_changePropertyType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccessDB.cs" />
     <Compile Include="Models\Car.cs" />
@@ -147,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102241557385_connectToDB.resx">
       <DependentUpon>202102241557385_connectToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102250835119_changePropertyType.resx">
+      <DependentUpon>202102250835119_changePropertyType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

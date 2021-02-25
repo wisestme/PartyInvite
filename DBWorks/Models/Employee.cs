@@ -10,7 +10,7 @@ namespace DBWorks.Models
         public int EmployeeId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public string ExperienceYears { get; set; }
+        public int ExperienceYears { get; set; }
         public decimal Salary { get; set; }
     }
 }
