@@ -122,9 +122,9 @@
       <DependentUpon>202102250835119_changePropertyType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccessDB.cs" />
-    <Compile Include="Models\Car.cs" />
-    <Compile Include="Models\Employee.cs" />
+    <Compile Include="IdentityEntities\AccessDB.cs" />
+    <Compile Include="Entities\Car.cs" />
+    <Compile Include="Entities\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102241520054_initialModel.resx">

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace DBWorks.Models
+﻿namespace DBWorks.Entities
 {
     public class Car
     {

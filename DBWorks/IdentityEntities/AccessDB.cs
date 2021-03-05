@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
+using DBWorks.Entities;
 
-namespace DBWorks.Models
+namespace DBWorks.IdentityEntities
 {
     public class AccessDB : DbContext
     {

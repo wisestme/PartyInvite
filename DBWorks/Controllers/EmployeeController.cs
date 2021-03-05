@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using DBWorks.Models;
+using DBWorks.Entities;
+using DBWorks.IdentityEntities;
+
 
 namespace DBWorks.Controllers
 {
@@ -12,6 +14,7 @@ namespace DBWorks.Controllers
         // GET: Employee
         public ActionResult GetEmployees()
         {
+            
             AccessDB employeeAccessDb = new AccessDB();
             List<Employee> employees = employeeAccessDb.Employees.ToList();
             return View(employees);
