@@ -1,0 +1,27 @@
+﻿@using System.Web.UI.WebControls
+@model DBWorks.Entities.Employee
+
+@{
+    ViewBag.Title = "Add Employee";
+}
+
+<h2>Add Employee</h2>
+
+@using (Html.BeginForm("AddEmployee", "Employee", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+{
+    <div>
+        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { PlaceHolder = "Employee Name" } })
+    </div>
+    <div>
+        @Html.EditorFor(model => model.ExperienceYears, new { htmlAttributes = new { PlaceHolder = "Employee Name" } })
+    </div>
+    <div>
+        @Html.EditorFor(model => model.Salary, new { htmlAttributes = new { PlaceHolder = "Employee Name" } })
+    </div>
+    <div>
+        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { PlaceHolder = "Employee Name" } })
+    </div>
+    
+
+    <input type="submit" value="Add" />
+}

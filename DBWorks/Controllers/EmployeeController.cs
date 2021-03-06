@@ -5,12 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using DBWorks.Entities;
 using DBWorks.IdentityEntities;
+using DBWorks.Repository;
 
 
 namespace DBWorks.Controllers
 {
     public class EmployeeController : Controller
     {
+        EmployeeService employeeService = new EmployeeService();
         // GET: Employee
         public ActionResult GetEmployees()
         {
@@ -24,6 +26,20 @@ namespace DBWorks.Controllers
         {
             AccessDB employeeAccessDb = new AccessDB();
             Employee employee = employeeAccessDb.Employees.Single(e => e.EmployeeId == id);
+            return View(employee);
+        }
+
+        [HttpGet]
+        public ActionResult AddEmployee()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddEmployee(Employee employee)
+        {
+            employeeService.AddEmployee(employee);
+
             return View(employee);
         }
     }
