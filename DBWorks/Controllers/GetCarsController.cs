@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using DBWorks.Entities;
 using DBWorks.IdentityEntities;
+using DBWorks.Repository;
 
 namespace DBWorks.Controllers
 {
@@ -22,6 +23,14 @@ namespace DBWorks.Controllers
         {
 
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult SaveCar(Car car)
+        {
+            CarService carService = new CarService();
+            carService.AddCar(car);
+            return View("AddCar");
         }
     }
 }
