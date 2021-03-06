@@ -146,6 +146,7 @@
     <Content Include="Views\GetCars\Index.cshtml" />
     <Content Include="Views\Employee\EmployeeDetails.cshtml" />
     <Content Include="Views\Employee\AddEmployee.cshtml" />
+    <Content Include="Views\GetCars\AddCar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

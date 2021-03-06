@@ -17,5 +17,11 @@ namespace DBWorks.Controllers
             List<Car> cars = carAccessDb.Cars.ToList();
             return View(cars);
         }
+
+        public ActionResult AddCar()
+        {
+
+            return View();
+        }
     }
 }
