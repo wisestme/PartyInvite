@@ -7,10 +7,12 @@
 <h2>Add Car</h2>
 
 <div>
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("AddCar", "GetCars", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
     {
         @Html.EditorFor(c => c.Name, new {htmlAttributes = new {PlaceHolder = "Car Name"}})
         @Html.EditorFor(c => c.Make, new {htmlAttributes = new{PlaceHolder = "Car Make"}})
         @Html.EditorFor(c => c.Year, new {htmlAttributes = new {PlaceHolder = "Year"}})
+
+        <input type="submit" value="Add car"/>
     }
 </div>

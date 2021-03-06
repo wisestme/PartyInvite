@@ -26,7 +26,7 @@ namespace DBWorks.Controllers
         }
 
         [HttpPost]
-        public ActionResult SaveCar(Car car)
+        public ActionResult AddCar(Car car)
         {
             CarService carService = new CarService();
             carService.AddCar(car);
