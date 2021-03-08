@@ -42,5 +42,11 @@ namespace DBWorks.Controllers
 
             return Content("Success");
         }
+
+        public ActionResult ListEmployees()
+        {
+            var employees = employeeService.AllEmployees();
+            return View(employees);
+        }
     }
 }
