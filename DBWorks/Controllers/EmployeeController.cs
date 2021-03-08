@@ -40,7 +40,7 @@ namespace DBWorks.Controllers
         {
             employeeService.AddEmployee(employee);
 
-            return View(employee);
+            return Content("Success");
         }
     }
 }
