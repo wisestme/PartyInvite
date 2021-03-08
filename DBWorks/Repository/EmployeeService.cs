@@ -16,5 +16,10 @@ namespace DBWorks.Repository
             _dbAccess.Employees.Add(employee);
             _dbAccess.SaveChanges();
         }
+
+        public List<Employee> AllEmployees()
+        {
+            return _dbAccess.Employees.ToList();
+        }
     }
 }
