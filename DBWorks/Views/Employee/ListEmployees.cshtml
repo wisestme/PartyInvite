@@ -1,0 +1,13 @@
+﻿@model List<DBWorks.Entities.Employee>
+@{
+    ViewBag.Title = "ListEmployees";
+}
+
+<h2>ListEmployees</h2>
+
+<ul>
+    @foreach (var employee in Model)
+    {
+        <li>@employee.Name</li>
+    }
+</ul>
