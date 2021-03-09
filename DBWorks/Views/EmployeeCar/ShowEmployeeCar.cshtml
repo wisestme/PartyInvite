@@ -1,0 +1,49 @@
+﻿@model DBWorks.Models.RandomCarViewModel
+@{
+    ViewBag.Title = "ShowEmployeeCar";
+}
+
+<h2>ShowEmployeeCar</h2>
+
+@*<ul>
+    @foreach (var employee in Model.Employee)
+    {
+        <li>@employee.Name</li>
+        <li>@Model.Car</li>
+    }
+    @foreach (var car in Model.Car)
+    {
+        <li>@car.Name</li>
+    }
+</ul>*@
+
+<table>
+    <tr>
+        <td>Employee</td>
+        <td>Car</td>
+    </tr>
+
+    @foreach (var employee in Model.Employee)
+    {
+        <tr>
+            <td>@employee.Name</td>
+            <td>
+                @foreach (var car in Model.Car)
+                {
+                    @car.Name
+                }
+            </td>
+        </tr>
+    }
+
+@*<tr>
+        @foreach (var employee in Model.Employee)
+        {
+            <td>@employee.Name</td>
+        }
+        @foreach (var car in Model.Car)
+        {
+            <td>@car.Name</td>
+        }
+    </tr>*@
+</table>

@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmployeeCarController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\GetCarsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -149,6 +150,7 @@
     <Content Include="Views\Employee\AddEmployee.cshtml" />
     <Content Include="Views\GetCars\AddCar.cshtml" />
     <Content Include="Views\Employee\ListEmployees.cshtml" />
+    <Content Include="Views\EmployeeCar\ShowEmployeeCar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

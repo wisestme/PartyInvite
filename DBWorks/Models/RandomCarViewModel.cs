@@ -8,7 +8,7 @@ namespace DBWorks.Models
 {
     public class RandomCarViewModel
     {
-        public Employee Employee { get; set; }
-        public Car Car { get; set; }
+        public List<Employee> Employee { get; set; }
+        public List<Car> Car { get; set; }
     }
 }
