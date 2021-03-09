@@ -104,6 +104,7 @@
     <Compile Include="Controllers\EmployeeCarController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\GetCarsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -151,6 +152,7 @@
     <Content Include="Views\GetCars\AddCar.cshtml" />
     <Content Include="Views\Employee\ListEmployees.cshtml" />
     <Content Include="Views\EmployeeCar\ShowEmployeeCar.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
