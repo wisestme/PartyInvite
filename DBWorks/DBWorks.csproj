@@ -128,6 +128,14 @@
     <Compile Include="Migrations\202103051617032_updateTable.designer.cs">
       <DependentUpon>202103051617032_updateTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103100751597_addFieldsToModel.cs" />
+    <Compile Include="Migrations\202103100751597_addFieldsToModel.designer.cs">
+      <DependentUpon>202103100751597_addFieldsToModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103100756016_AddEmployeeGender.cs" />
+    <Compile Include="Migrations\202103100756016_AddEmployeeGender.designer.cs">
+      <DependentUpon>202103100756016_AddEmployeeGender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="IdentityEntities\AccessDB.cs" />
     <Compile Include="Entities\Car.cs" />
@@ -178,6 +186,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103051617032_updateTable.resx">
       <DependentUpon>202103051617032_updateTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103100751597_addFieldsToModel.resx">
+      <DependentUpon>202103100751597_addFieldsToModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103100756016_AddEmployeeGender.resx">
+      <DependentUpon>202103100756016_AddEmployeeGender.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

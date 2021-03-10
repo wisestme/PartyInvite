@@ -12,6 +12,6 @@ namespace DBWorks.Entities
         public decimal Salary { get; set; }
         public string City { get; set; }
         public int DeptId { get; set; }
-
+        public string Gender { get; set; }
     }
 }
