@@ -21,7 +21,10 @@
     <div>
         @Html.EditorFor(model => model.Email, new { htmlAttributes = new { PlaceHolder = "Employee Name" } })
     </div>
-    
+    <div>
+        @Html.EditorFor(model => model.DeptId, new { htmlAttributes = new { PlaceHolder = "Department ID" } })
+    </div>
+
 
     <input type="submit" value="Add" />
 }
