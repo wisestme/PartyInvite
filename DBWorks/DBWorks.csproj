@@ -137,6 +137,10 @@
     <Compile Include="Migrations\202103100756016_AddEmployeeGender.designer.cs">
       <DependentUpon>202103100756016_AddEmployeeGender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103100804408_AddDepartment.cs" />
+    <Compile Include="Migrations\202103100804408_AddDepartment.designer.cs">
+      <DependentUpon>202103100804408_AddDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="IdentityEntities\AccessDB.cs" />
     <Compile Include="Entities\Car.cs" />
@@ -193,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103100756016_AddEmployeeGender.resx">
       <DependentUpon>202103100756016_AddEmployeeGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103100804408_AddDepartment.resx">
+      <DependentUpon>202103100804408_AddDepartment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
