@@ -10,5 +10,8 @@ namespace DBWorks.Entities
         public string Email { get; set; }
         public int ExperienceYears { get; set; }
         public decimal Salary { get; set; }
+        public string City { get; set; }
+        public int DeptId { get; set; }
+
     }
 }
