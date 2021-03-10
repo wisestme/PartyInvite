@@ -141,6 +141,14 @@
     <Compile Include="Migrations\202103100804408_AddDepartment.designer.cs">
       <DependentUpon>202103100804408_AddDepartment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103100824418_AccessDepartmentTable.cs" />
+    <Compile Include="Migrations\202103100824418_AccessDepartmentTable.designer.cs">
+      <DependentUpon>202103100824418_AccessDepartmentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103100827455_seedDepartment.cs" />
+    <Compile Include="Migrations\202103100827455_seedDepartment.designer.cs">
+      <DependentUpon>202103100827455_seedDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="IdentityEntities\AccessDB.cs" />
     <Compile Include="Entities\Car.cs" />
@@ -200,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103100804408_AddDepartment.resx">
       <DependentUpon>202103100804408_AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103100824418_AccessDepartmentTable.resx">
+      <DependentUpon>202103100824418_AccessDepartmentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103100827455_seedDepartment.resx">
+      <DependentUpon>202103100827455_seedDepartment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

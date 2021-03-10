@@ -11,17 +11,18 @@ namespace DBWorks.Migrations
     {
         public override void Up()
         {
-            AccessDB context = new AccessDB();
+            //AccessDB context = new AccessDB();
 
-            var departments = new List<Department>
-            {
-                new Department() {Name = "IT"},
-                new Department() {Name = "HR"},
-                new Department() {Name = "Admin"},
-                new Department() {Name = "Finance"}
-            };
+            //var departments = new List<Department>
+            //{
+            //    new Department() {Name = "IT"},
+            //    new Department() {Name = "HR"},
+            //    new Department() {Name = "Admin"},
+            //    new Department() {Name = "Finance"}
+            //};
 
-            
+            //context.Departments.AddRange(departments);
+            //context.SaveChanges();
 
         }
         
