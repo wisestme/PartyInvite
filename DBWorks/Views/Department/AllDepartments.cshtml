@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DBWorks.Entities.Department>
+@{
+    ViewBag.Title = "AllDepartments";
+}
+
+<h2>AllDepartments</h2>
+
+<ul>
+    @foreach (var department in Model)
+    {
+        <li>@department.Name</li>
+    }
+</ul>
