@@ -16,6 +16,7 @@ namespace FashionPlace.Controllers
             return Content("We are the identity folks!!!");
         }
 
+        [AllowAnonymous]
         public ActionResult NonIdentity()
         {
             return Content("We don't bother about identity");
