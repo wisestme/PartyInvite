@@ -1,0 +1,28 @@
+﻿@using ManagingUsers.Models
+@model IEnumerable<AppUser>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">User Accounts</div>
+    
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        @foreach (AppUser user in Model)
+        {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+        </tr>
+        }
+
+    </table>
+</div>
