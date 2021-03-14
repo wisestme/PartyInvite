@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using ManagingUsers.Infrastructure;
@@ -15,7 +16,7 @@ namespace ManagingUsers.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            return View(UerManager.Users);
+            return View(UserManager.Users);
         }
 
         public ActionResult Create()
@@ -33,7 +34,7 @@ namespace ManagingUsers.Controllers
                     UserName = model.Name,
                     Email = model.Email
                 };
-                IdentityResult result = UerManager.Create(user, model.Password);
+                IdentityResult result = UserManager.Create(user, model.Password);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index");
@@ -48,6 +49,28 @@ namespace ManagingUsers.Controllers
             return View(model);
         }
 
+        public async Task<ActionResult> Delete(string id)
+        {
+            AppUser user = await UserManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                IdentityResult result = await UserManager.DeleteAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return View("Error", result.Errors);
+                }
+            }
+            else
+            {
+                return View("Error", new string[] {"User not found"});
+            }
+        }
+
         private void AddErrorsFromResult(IdentityResult result)
         {
             foreach (string error in result.Errors)
@@ -56,7 +79,7 @@ namespace ManagingUsers.Controllers
             }
         }
 
-        private AppUserManager UerManager
+        private AppUserManager UserManager
         {
             get { return HttpContext.GetOwinContext().GetUserManager<AppUserManager>(); }
         }
