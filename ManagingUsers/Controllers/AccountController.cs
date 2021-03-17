@@ -8,6 +8,7 @@ using ManagingUsers.Models;
 
 namespace ManagingUsers.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         // GET: Account
